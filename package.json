@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  },
+  "name": "boardcamp-back",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayanecol/Boardcamp.git"
+  },
+  "keywords": [],
+  "author": "Dayane Carolina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dayanecol/Boardcamp/issues"
+  },
+  "homepage": "https://github.com/dayanecol/Boardcamp#readme",
+  "description": ""
+}
