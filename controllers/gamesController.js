@@ -11,7 +11,7 @@ export async function getGames(req, res) {
             SELECT games.*,categories.name as categoryName FROM games
             JOIN categories
             ON games.categoryId = categories.id
-            WHERE lower(games.name) like lower('${name}%')
+            WHERE lower(games.name) LIKE lower('${name}%')
         `);
       res.send(games.rows);
       return;
@@ -35,7 +35,7 @@ export async function createGame(req, res) {
  
   const gameSchema = joi.object({
     name: joi.string().required(),
-    image: joi.string(),
+    image: joi.string().required(),
     stockTotal: joi.number().min(1).required(),
     categoryId: joi.number().required(),
     pricePerDay: joi.number().min(1).required()
