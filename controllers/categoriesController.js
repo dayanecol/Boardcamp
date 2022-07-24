@@ -11,7 +11,6 @@ export async function getCategories(req, res) {
     console.log(chalk.bold.red("Erro no servidor!"));
     res.status(500).send({
       message: "Internal server error while getting categories!",
-      detail: error,
     });
   }
 }
@@ -43,7 +42,6 @@ export async function createCategory(req, res) {
     console.log(chalk.bold.red("Erro no servidor!"));
     res.status(500).send({
       message: "Internal server error while creating category!",
-      detail: error,
     });
   }
 }
